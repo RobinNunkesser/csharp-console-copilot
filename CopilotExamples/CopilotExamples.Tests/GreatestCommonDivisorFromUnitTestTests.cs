@@ -3,7 +3,7 @@ namespace CopilotExamples.Tests;
 
 
 [TestClass]
-public class GreatestCommonDivisorTests
+public class GreatestCommonDivisorFromUnitTestTests
 {
     [TestMethod]
     public void GCD_WithPositiveIntegers_ReturnsCorrectResult()
@@ -14,7 +14,7 @@ public class GreatestCommonDivisorTests
         var expected = 6;
         
         // Act
-        var result = GreatestCommonDivisor.Calculate(first, second);
+        var result = GreatestCommonDivisorFromUnitTest.Calculate(first, second);
         
         // Assert
         Assert.AreEqual(expected, result);
@@ -29,7 +29,7 @@ public class GreatestCommonDivisorTests
         var expected = 1;
         
         // Act
-        var result = GreatestCommonDivisor.Calculate(first, second);
+        var result = GreatestCommonDivisorFromUnitTest.Calculate(first, second);
         
         // Assert
         Assert.AreEqual(expected, result);
@@ -43,7 +43,7 @@ public class GreatestCommonDivisorTests
         var expected = 42;
         
         // Act
-        var result = GreatestCommonDivisor.Calculate(number, number);
+        var result = GreatestCommonDivisorFromUnitTest.Calculate(number, number);
         
         // Assert
         Assert.AreEqual(expected, result);
@@ -54,7 +54,7 @@ public class GreatestCommonDivisorTests
     public void GCD_WithNegativeNumber_ThrowsArgumentException()
     {
         // Act
-        GreatestCommonDivisor.Calculate(-5, 10);
+        GreatestCommonDivisorFromUnitTest.Calculate(-5, 10);
     }
     
     [TestMethod]
@@ -62,7 +62,7 @@ public class GreatestCommonDivisorTests
     public void GCD_WithZero_ThrowsArgumentException()
     {
         // Act
-        GreatestCommonDivisor.Calculate(0, 10);
+        GreatestCommonDivisorFromUnitTest.Calculate(0, 10);
     }
     
     [TestMethod]
@@ -74,7 +74,7 @@ public class GreatestCommonDivisorTests
         var expected = 1;
         
         // Act
-        var result = GreatestCommonDivisor.Calculate(first, second);
+        var result = GreatestCommonDivisorFromUnitTest.Calculate(first, second);
         
         // Assert
         Assert.AreEqual(expected, result);
